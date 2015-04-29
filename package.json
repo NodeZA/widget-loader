@@ -1,0 +1,37 @@
+{
+  "name": "widget-loader",
+  "version": "0.1.0",
+  "description": "Widget loader for WidGet CMS",
+  "main": "index.js",
+  "scripts": {
+    "jshint": "jshint lib test/loader.js",
+    "test": "npm run jshint && mocha test/loader"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NodeZA/widget-loader.git"
+  },
+  "keywords": [
+    "widget",
+    "cms",
+    "loader",
+    "module"
+  ],
+  "author": "Qawelesizwe Mlilo <qawemlilo@gmail.com> (http://blog.ragingflame.co.za/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NodeZA/widget-loader/issues"
+  },
+  "homepage": "https://github.com/NodeZA/widget-loader",
+  "dependencies": {
+    "ghost-sandbox": "^0.1.1",
+    "lodash": "^3.7.0",
+    "when": "^3.7.3"
+  },
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "express": "^4.12.3",
+    "jshint": "^2.7.0",
+    "supertest": "^0.15.0"
+  }
+}
