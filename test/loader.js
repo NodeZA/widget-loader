@@ -24,20 +24,19 @@ describe('Widget Loader', function(){
     var express = require('express');
     var expressApp = express();
 
-    expressApp.use(widgetLoader({
-      App: App,
-      widgetDir: widgetDir
+    expressApp.use(widgetLoader(App, {
+      widgetDirectory: widgetDir
     }));
 
     expressApp.get('/', function (req, res) {
       res.json(res.locals.WidgetCollection);
     });
-    
+
     server = expressApp.listen(3004, function () {
-    
+
       var host = server.address().address;
       var port = server.address().port;
-    
+
       console.log('Example app listening at http://%s:%s', host, port);
 
       done();

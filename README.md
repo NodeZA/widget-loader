@@ -1,6 +1,6 @@
 # WidGet Loader
 
- > Widget loader/middleware for WidGet CMS. 
+ > Widget loader/middleware for WidGet CMS.
 
 
 ### Installation
@@ -15,14 +15,13 @@ npm install widget-loader
 ```
 var widgetLoader = require('widget-loader');
 var express = require('express');
-var app = express();
-var widgetDir = path.join(__dirname, './widgets');
+var App = express();
+var widgetDirectory = path.join(__dirname, './widgets');
 
 
 
-app.use(widgetLoader({
-  App: app,
-  widgetDir: widgetDir
+app.use(widgetLoader(App, {
+  widgetDirectory: widgetDirectory
 }))
 
 ```
