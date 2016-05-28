@@ -1,6 +1,7 @@
+"use strict";
 
-var config = require('./config.json');
-var when = require('when');
+const config = require('./config.json');
+const when = require('when');
 
 module.exports.config = config;
 
