@@ -1,11 +1,12 @@
 {
   "name": "widget-loader",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Widget loader for WidGet CMS",
   "main": "index.js",
   "scripts": {
     "jshint": "jshint lib test/loader.js",
-    "test": "npm run jshint && mocha test/loader"
+    "test": "./node_modules/mocha/bin/mocha test/loader",
+    "prepublish": "npm test"
   },
   "repository": {
     "type": "git",
@@ -32,6 +33,7 @@
     "chai": "^3.5.0",
     "express": "^4.12.3",
     "jshint": "^2.7.0",
-    "supertest": "^1.2.0"
+    "supertest": "^1.2.0",
+    "mocha": "^2.5.3"
   }
 }

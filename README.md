@@ -12,11 +12,13 @@ npm install widget-loader
 ### Example
 
 
-```
-var widgetLoader = require('widget-loader');
-var express = require('express');
-var App = express();
-var widgetDirectory = path.join(__dirname, './widgets');
+```javascript
+"use strict";
+
+const widgetLoader = require('widget-loader');
+const express = require('express');
+const App = express();
+const widgetDirectory = path.join(__dirname, './widgets');
 
 
 
@@ -26,6 +28,10 @@ app.use(widgetLoader(App, {
 
 ```
 
+### Testing
+```
+npm test
+```
 
 License
 -------
