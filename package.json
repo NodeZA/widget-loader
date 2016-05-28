@@ -25,13 +25,13 @@
   "homepage": "https://github.com/NodeZA/widget-loader",
   "dependencies": {
     "ghost-sandbox": "^0.1.1",
-    "lodash": "^3.7.0",
+    "lodash": "^4.13.1",
     "when": "^3.7.3"
   },
   "devDependencies": {
-    "chai": "^2.3.0",
+    "chai": "^3.5.0",
     "express": "^4.12.3",
     "jshint": "^2.7.0",
-    "supertest": "^0.15.0"
+    "supertest": "^1.2.0"
   }
 }
