@@ -1,13 +1,14 @@
+"use strict";
 
-var should = require('chai').should();
-var path = require('path');
-var request = require('supertest');
-var widgetLoader = require('../');
-var widgetDir = path.join(__dirname, './widgets');
-var server = null;
+const should = require('chai').should();
+const path = require('path');
+const request = require('supertest');
+const widgetLoader = require('../');
+const widgetDir = path.join(__dirname, './widgets');
+let server = null;
 
 
-var App = {
+const App = {
   getConfig: function () {
     return false;
   },
@@ -21,8 +22,8 @@ var App = {
 describe('Widget Loader', function(){
 
   before(function(done) {
-    var express = require('express');
-    var expressApp = express();
+    let express = require('express');
+    let expressApp = express();
 
     expressApp.use(widgetLoader(App, {
       widgetDirectory: widgetDir
@@ -33,12 +34,7 @@ describe('Widget Loader', function(){
     });
 
     server = expressApp.listen(3004, function () {
-
-      var host = server.address().address;
-      var port = server.address().port;
-
-      console.log('Example app listening at http://%s:%s', host, port);
-
+      console.log(`Example app listening at http://localhost:3004`);
       done();
     });
   });
