@@ -1,6 +1,6 @@
 {
   "name": "widget-loader",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "Widget loader for WidGet CMS",
   "main": "index.js",
   "scripts": {
@@ -25,9 +25,7 @@
   },
   "homepage": "https://github.com/NodeZA/widget-loader",
   "dependencies": {
-    "ghost-sandbox": "^0.1.1",
-    "lodash": "^4.16.0",
-    "when": "^3.7.3"
+    "ghost-sandbox": "^1.0.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
